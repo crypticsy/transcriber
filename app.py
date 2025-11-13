@@ -241,8 +241,8 @@ col_model1, col_model2 = st.columns([1, 1])
 with col_model1:
     transcription_model = st.selectbox(
         "🎧 Transcription Model",
-        ["base", "small", "medium", "large"],
-        index=1,  # Default to "small"
+        ["tiny", "base", "small"],
+        index=0, 
         help="Whisper model size (base is faster, large is more accurate)"
     )
 
